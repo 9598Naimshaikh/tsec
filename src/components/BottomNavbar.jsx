@@ -1,6 +1,9 @@
-import React from 'react';
+
+import React, { useContext } from 'react';
+import UploadModalContext from './UploadModalContext';
 
 const BottomNavbar = () => {
+  const { setIsUploadOpen } = useContext(UploadModalContext);
   return (
     <nav className="fixed bottom-4 z-100 left-1/2 -translate-x-1/2 bg-neutral-300 rounded-full shadow-lg  max-w-sm w-full mx-auto">
       <div className="flex justify-around items-center">
@@ -23,7 +26,7 @@ const BottomNavbar = () => {
           <span className="text-xs mt-1">Photos</span>
         </div>
 
-        <div className="flex flex-col items-center p-2 text-neutral-950 cursor-pointer">
+        <div className="flex flex-col items-center p-2 text-neutral-950 cursor-pointer" onClick={() => setIsUploadOpen(true)}>
           {/* Albums Icon */}
           <h1 className='text-4xl'>+</h1>
           <span className="text-xs mt-1">Upload</span>
@@ -53,8 +56,6 @@ const BottomNavbar = () => {
           </svg>
           <span className="text-xs mt-1">Assistant</span>
         </div>
-
-        
       </div>
     </nav>
   );
