@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import BottomNavbar from './components/BottomNavbar'
 import curve from "./images/curve.svg"
 import AboutSection from './components/About'
+import DarkFooter from './components/Footer'
 
 
 
@@ -17,7 +18,8 @@ const App = () => {
         <BottomNavbar/>
         <AboutSection/>
         <img src={curve} alt="" className='absolute top-0 scale-75 opacity-15 blur-lg -right-200 bottom-0 z-0'/>
-        
+        <img src={curve} alt="" className='absolute top-50% scale-75 opacity-15 blur-lg rotate-180 -left-200 bottom-0 z-0'/>
+        <DarkFooter/>
       </main>
     </div>
   )
