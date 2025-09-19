@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <header className='flex items-center justify-between shadow-md rounded-full px-4 py-4'>
+    <header className='flex items-center justify-between rounded-full px-4 py-4 '>
         <div className="logo">
             <div className="icons"></div>
             <h1 className='text-xl font-bold'>AETHERIUM GALLARY</h1>
@@ -21,4 +21,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
